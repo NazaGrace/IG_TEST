@@ -18,7 +18,3 @@ app.add_middleware(
 def root():
     return {"response": "Active!"}
 
-if __name__ == "__main__":
-    print("I am here")
-    import uvicorn
-    uvicorn.run(app, host='localhost', port=8000)
