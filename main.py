@@ -24,7 +24,7 @@ def root():
 
 
 #Generate or load your verify token
-VERIFY_TOKEN = os.environ.get("META_VERIFY_TOKEN") or secrets.token_urlsafe(32)
+VERIFY_TOKEN = os.environ.get("META_VERIFY_TOKEN") or EAASKVeDswXgBO0V56yrpJCM7UBa6lLLcWhcjpQWeRfafvLXfZCcCrltftOd2BSGFixBKofZCSJZBHtA6efDoHJO5uOZCCbYcUFc94EYxIV6FZCvLXPqZB9ZBrcPtJPxw20qYmXuTgZA5l8rTf48x3PYAzleX5BH2qmazEX0FDbwmM2OZCWSWPh1YsmWy3Xl5sTgiT1LCTbPZAziN52H4D9
 print(f"Your VERIFY_TOKEN is: {VERIFY_TOKEN}") 
 # Print it once for setup
 
