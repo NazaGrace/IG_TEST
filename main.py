@@ -34,9 +34,9 @@ class MetaWebhookHandler(BaseHTTPRequestHandler):
         query_params = parse_qs(parsed_url.query)
 
         if parsed_url.path == "/webhook":
-            mode = query_params.get("hub.mode", [None])[0]
-            token = query_params.get("hub.verify_token", [None])[0]
-            challenge = query_params.get("hub.challenge", [None])[0]
+            mode = query_params.get("hub.mode", [subscribe])[0]
+            token = query_params.get("hub.verify_token", [meatyhamhock])[0]
+            challenge = query_params.get("hub.challenge", [1158201444])[0]
 
             if mode == "subscribe" and token == VERIFY_TOKEN:
                 self.send_response(200)
